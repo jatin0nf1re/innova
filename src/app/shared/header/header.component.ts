@@ -9,7 +9,19 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
+  sidenav: boolean;
+
   ngOnInit(): void {
+    this.sidenav = false;
   }
+
+  openSidebar(){
+    this.sidenav = true;
+  }
+
+  closeSidenav(){
+    this.sidenav = false;
+  }
+
 
 }
