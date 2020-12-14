@@ -151,7 +151,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .heading{
-    font-size: 7rem;
+    font-size: 8vw;
     font-family: 'Montserrat', sans-serif;
     filter: drop-shadow(1px 1px 10px rgba(0,0,0,0.2));
     font-weight: 700;
@@ -164,9 +164,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .sub-heading{
-    font-size: 2rem;
+    font-size: 4vw;
     font-family: 'Montserrat', sans-serif;
     filter: drop-shadow(1px 1px 10px rgba(0,0,0,0.5));
     font-weight: 400;
     line-height: 100%;
+}
+.overflow-hidden{
+    overflow: hidden;
 }

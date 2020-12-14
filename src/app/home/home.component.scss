@@ -36,11 +36,9 @@
 }
 
 .svg-style{
-    height: 100%;
     width: 100%;
-    position: absolute;
+    min-width: 1000px;
     // z-index: -1;
-    transform: perspective(2000px);
 }
 
 path, rect, polygon, polyline,line{
@@ -143,4 +141,15 @@ rect.cls-1{
 
 .cls-3:hover{
     fill: url(#gradient);
+}
+
+
+@media only screen and (max-width: 500px) {
+    .updates{
+        width: 90%!important;
+        margin: 1rem;
+    }
+    .mob-h{
+        height: auto;
+    }
 }

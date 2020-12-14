@@ -4,8 +4,11 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav'
 import { MatCardModule } from '@angular/material/card'
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -44,6 +47,9 @@ import { TeamComponent } from './team/team.component';
     MatButtonModule,
     FlexLayoutModule,
     MatCardModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

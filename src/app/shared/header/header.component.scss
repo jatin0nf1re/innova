@@ -1,5 +1,5 @@
 .transparent{
-    background-color: black;
+    background-color: transparent;
 }
 
 
@@ -24,4 +24,8 @@
     background:linear-gradient(to bottom, #b3ffab 0%, #12fff7 100%);;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.text-dec-none{
+    text-decoration: none;
 }
