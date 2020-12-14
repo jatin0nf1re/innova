@@ -1,0 +1,28 @@
+.fa{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 10px rgba(0,0,0,0.3));
+    object-fit: cover;
+}
+
+.name{
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.designation{
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.mt-big{
+    margin-top: 10vh;
+}
+
+.mx-3{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
