@@ -1,55 +1,53 @@
 <section class="p-3">
 <div class="heading text-color">Team</div>
+<mat-tab-group mat-align-tabs="center" class="text-white">
+    <mat-tab label="Faculty" class="sub-heading text-white">
+        <div class="text-white mt-3 w-100" fxLayout="row" fxLayoutAlign="center">
+            <div class="mt-big" fxLayout="column" fxLayoutAlign="center center">
+                <img src="" class="fa">
+                <div class="name">Dr. Narendra Kumar</div>
+                <div class="designation">Faculty Advisor</div>
+            </div>
+        </div>
+    </mat-tab>
+    <mat-tab label="Council" class="sub-heading text-white">
+        <div class="text-white mt-3 w-100" fxLayout="row wrap" fxLayoutAlign="center center">
+            <div *ngFor="let head of council" class="mt-big mx-3 member-card" fxLayout="column" fxLayoutAlign="center center">
+                <img src="{{head.imgSrc}}" class="member-img">
+                <div class="name">{{head.name}}</div>
+                <div class="designation">{{head.designation}}</div>
+                <div class="link">
+                    <a href="{{head.mailId}}"><fa-icon class="icon"  [icon]="mailIcon" size="2x"></fa-icon></a>
+                    <a href="{{head.linkedIn}}"><fa-icon class="icon" [icon]="linkedInIcon" size="2x"></fa-icon></a>
+                </div>
+            </div>
+        </div>
+    </mat-tab>
+    <!-- <mat-tab label="Co-Heads" class="sub-heading text-white">
+        <div class="text-white mt-3 w-100" fxLayout="row wrap" fxLayoutAlign="center center">
+            <div class="mt-big mx-3" fxLayout="column" fxLayoutAlign="center center">
+                <img src="assets/images/Jatin.jpg" class="member-img">
+                <div class="name">Jatin Singh</div>
+                <div class="designation">Chairperson</div>
+            </div>
+
+            <div class="mt-big mx-3" fxLayout="column" fxLayoutAlign="center center">
+                <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="member-img">
+                <div class="name">Dr. Narendra Kumar</div>
+                <div class="designation">Faculty Advisor</div>
+            </div>
+
+            <div class="mt-big mx-3" fxLayout="column" fxLayoutAlign="center center">
+                <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="member-img">
+                <div class="name">Dr. Narendra Kumar</div>
+                <div class="designation">Faculty Advisor</div>
+            </div>
+        </div>
+    </mat-tab> -->
+  </mat-tab-group>
 <div class="w-100" fxLayout="column" fxLayoutAlign="space-around center">
     <!-- <div class="sub-heading text-white mt-3">Faculty Advisor</div> -->
-    <div class="text-white mt-3 w-100" fxLayout="row" fxLayoutAlign="center">
-        <div class="mt-big" fxLayout="column" fxLayoutAlign="center center">
-            <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="fa">
-            <div class="name">Dr. Narendra Kumar</div>
-            <div class="designation">Faculty Advisor</div>
-        </div>
-    </div>
-    <div class="sub-heading text-white mt-big">4th Year</div>
-    <hr class="w-50">
-    <div class="text-white mt-3 w-100" fxLayout="row wrap" fxLayoutAlign="center center">
-        <div class="mt-big mx-3" fxLayout="column" fxLayoutAlign="center center">
-            <img src="assets/images/Jatin.jpg" class="fa">
-            <div class="name">Jatin Singh</div>
-            <div class="designation">Chairperson</div>
-        </div>
-
-        <div class="mt-big mx-3" fxLayout="column" fxLayoutAlign="center center">
-            <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="fa">
-            <div class="name">Dr. Narendra Kumar</div>
-            <div class="designation">Faculty Advisor</div>
-        </div>
-
-        <div class="mt-big mx-3" fxLayout="column" fxLayoutAlign="center center">
-            <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="fa">
-            <div class="name">Dr. Narendra Kumar</div>
-            <div class="designation">Faculty Advisor</div>
-        </div>
-    </div>
-    <div class="sub-heading text-white mt-big">3rd Year</div>
-    <hr class="w-50">
-    <div class="text-white mt-3 w-100" fxLayout="row wrap" fxLayoutAlign="center center">
-        <div class="mt-big mx-3" fxLayout="column" fxLayoutAlign="center center">
-            <img src="assets/images/Jatin.jpg" class="fa">
-            <div class="name">Jatin Singh</div>
-            <div class="designation">Chairperson</div>
-        </div>
-
-        <div class="mt-big mx-3" fxLayout="column" fxLayoutAlign="center center">
-            <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="fa">
-            <div class="name">Dr. Narendra Kumar</div>
-            <div class="designation">Faculty Advisor</div>
-        </div>
-
-        <div class="mt-big mx-3" fxLayout="column" fxLayoutAlign="center center">
-            <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="fa">
-            <div class="name">Dr. Narendra Kumar</div>
-            <div class="designation">Faculty Advisor</div>
-        </div>
-    </div>
+    
+    
 </div>
 </section>

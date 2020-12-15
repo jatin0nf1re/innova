@@ -9,6 +9,8 @@ import { MatCardModule } from '@angular/material/card'
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatTabsModule } from '@angular/material/tabs';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -23,6 +25,7 @@ import { CompetitionsComponent } from './competitions/competitions.component';
 import { WorkshopsComponent } from './workshops/workshops.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { TeamComponent } from './team/team.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +40,8 @@ import { TeamComponent } from './team/team.component';
     CompetitionsComponent,
     WorkshopsComponent,
     SponsorsComponent,
-    TeamComponent
+    TeamComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +53,9 @@ import { TeamComponent } from './team/team.component';
     MatCardModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatTabsModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

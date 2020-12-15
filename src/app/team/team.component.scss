@@ -6,6 +6,20 @@
     object-fit: cover;
 }
 
+.member-img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 10px rgba(0,0,0,0.3));
+    object-fit: cover;
+    transition: 0.25s ease-in;
+}
+
+.icon{
+    margin-top: 10px;
+}
+
+
 .name{
     font-family: 'Montserrat';
     font-size: 1.5rem;
@@ -26,3 +40,42 @@
     margin-left: 3rem;
     margin-right: 3rem;
 }
+
+/* Styles for tab labels */
+.mat-tab-label {
+    font-size: x-large;
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+}
+
+/* Styles for the active tab label */
+.mat-tab-label.mat-tab-label-active {
+    font-size: x-large;
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+}
+
+/* Styles for the ink bar */
+.mat-ink-bar {
+    background: linear-gradient(180deg, #2af598 0%, #009efd 100%)!important;
+}
+
+.link{
+    margin-top: 1rem;
+    width: 100%;
+}
+
+
+.link a{
+    margin: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+.member-card{
+    width: 25%;
+    text-align: center;
+}
+

@@ -2,6 +2,6 @@
 <div class="heading text-color mb-big">Past Sponsors</div>
 
 <div class="w-100" fxLayout="row wrap">
-    <img src="https://www.newdesigngroup.ca/ndgcnt/uploads/2014/11/1280px-Intel-logo.svg_.png" class="sponsor">
+    <img *ngFor="let sponsor of sponsors" src="{{sponsor.imgSrc}}" class="sponsor">
 </div>
 </section>

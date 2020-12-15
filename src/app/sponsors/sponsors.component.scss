@@ -12,3 +12,12 @@
 .mb-big{
     margin-bottom: 3rem;
 }
+
+@media only screen and (max-width: 500px) {
+    .sponsor{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        max-width: 90vw;
+        max-height: 10vh;
+    }
+}

@@ -6,7 +6,7 @@ body{
     background-color: white;
 }
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Raleway, "Helvetica Neue", sans-serif; }
 
 .flex-spacer{
     flex: 1 1 auto;
@@ -141,6 +141,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     animation: colorChange 4s ease-in 0s infinite alternate;
 }
 
+.text-grad{
+    background:linear-gradient(to bottom, #b3ffab 0%, #12fff7 100%);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colorChange 4s ease-in 0s infinite alternate;
+}
+
 @keyframes colorChange{
     0%{
         filter: hue-rotate(0);
@@ -172,4 +179,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 .overflow-hidden{
     overflow: hidden;
+}
+
+.bg-darkgrey{
+    background-color: #242424;
+}
+
+.bg-grey{
+    background-color: #4e4e4e;
 }

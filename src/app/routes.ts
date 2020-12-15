@@ -6,6 +6,7 @@ import { SponsorsComponent } from './sponsors/sponsors.component';
 import { TeamComponent } from './team/team.component';
 import { TemplateBasicComponent } from './template-basic/template-basic.component';
 import { WorkshopsComponent } from './workshops/workshops.component';
+import { ContactComponent } from './contact/contact.component'
 
 export const routes: Routes = [
   { path: 'home',  component: HomeComponent},
@@ -30,6 +31,10 @@ export const routes: Routes = [
     {
       path:'team',
       component: TeamComponent
+    },
+    {
+      path:'contact',
+      component: ContactComponent
     },
   ]
   },
