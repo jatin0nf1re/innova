@@ -11,6 +11,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatTabsModule } from '@angular/material/tabs';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -56,6 +58,8 @@ import { ContactComponent } from './contact/contact.component';
     MatListModule,
     MatTabsModule,
     FontAwesomeModule,
+    NgbModule,
+    IvyCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

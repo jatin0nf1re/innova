@@ -44,6 +44,10 @@ body { margin: 0; font-family: Raleway, "Helvetica Neue", sans-serif; }
     padding-top: 1rem;
 }
 
+.pt-3{
+    padding-top: 3rem;
+}
+
 .font-medium{
     font-size: medium;
 }
@@ -132,7 +136,7 @@ body { margin: 0; font-family: Raleway, "Helvetica Neue", sans-serif; }
 }
 
 .border-round{
-    border-radius: 20px;
+    border-radius: 20px!important;
 }
 
 .border-black{
@@ -185,9 +189,11 @@ body { margin: 0; font-family: Raleway, "Helvetica Neue", sans-serif; }
 }
 
 .bg-darkgrey{
-    background-color: #242424;
+    background-color: #242424!important;
 }
 
 .bg-grey{
     background-color: #4e4e4e;
 }
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

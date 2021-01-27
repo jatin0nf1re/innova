@@ -9,18 +9,18 @@ export class LecturesComponent implements OnInit {
 
   constructor() { }
   upcoming = [
+  ]
+  lectures = [
     {
       'id': 0,
       'name': 'Neeraj Jhanji',
       'about': 'Founder, ImaHima',
       'desc' : 'Inventor of mobile checkin, status updates and mobile chat.',
-      'status': 1,
+      'status': 0,
       'date' : '18th Dec 20',
       'time' : "4:30pm",
       'imgSrc' : 'assets/images/Neeraj_Jhanji.jpg',
     },
-  ]
-  lectures = [
     {
       'id': 1,
       'name': 'Sandeep Jain',

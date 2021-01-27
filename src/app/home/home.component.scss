@@ -45,7 +45,7 @@ path, rect, polygon, polyline,line{
     stroke-dasharray: 7000;
     stroke-dashoffset: 7000;
     /* stroke: #64B5F6; */
-    animation: draw 4s cubic-bezier(.81,.22,.88,.75) 2s forwards;
+    animation: draw 4s cubic-bezier(.81,.22,.88,.75) 0.5s forwards;
 }
 
 rect.cls-1{
@@ -155,6 +155,16 @@ rect.cls-1{
     margin: 1rem;
     word-wrap: break-word;
     line-height: 100%;
+}
+
+.padding-section{
+    padding-top: 5rem;
+}
+
+.limit{
+    line-height: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 @media only screen and (max-width: 500px) {
