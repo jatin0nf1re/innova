@@ -28,6 +28,8 @@ import { WorkshopsComponent } from './workshops/workshops.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
+import { MoreInfoComponent } from './home/more-info/more-info.component';
+
 
 @NgModule({
   declarations: [
@@ -43,7 +45,8 @@ import { ContactComponent } from './contact/contact.component';
     WorkshopsComponent,
     SponsorsComponent,
     TeamComponent,
-    ContactComponent
+    ContactComponent,
+    MoreInfoComponent
   ],
   imports: [
     BrowserModule,
