@@ -1,0 +1,15 @@
+.start-loader svg{
+    // animation: rotate 5s infinite;
+    // transform-origin: center;
+    animation: rotate 5s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes rotate{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(20);
+    }
+}

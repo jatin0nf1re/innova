@@ -1,0 +1,54 @@
+<!-- 
+  <mat-spinner *ngIf="isLoading"></mat-spinner>
+  <div *ngIf="!isLoading">
+    <p style= "color: white;">{{this.workshop.title}}</p>
+    <p style= "color: white;">{{this.workshop.description}}</p>
+    <p style= "color: white;">{{this.workshop.status}}</p>
+    <p style= "color: white;">{{this.workshop.date.day}}</p>
+    <p style= "color: white;">{{this.workshop.date.day}}</p>
+    <img class="image-preview"  [src]="this.workshop.imagePath" [alt]="this.workshop.title">
+    <p style= "color: white;">{{this.workshop.imagePath}}</p>
+    <p style= "color: white;">{{this.workshop.time}}</p>
+    <p style= "color: white;">{{this.workshop.regLink}}</p>
+  </div> -->
+
+<mat-spinner *ngIf="isLoading"></mat-spinner>
+<div *ngIf="!isLoading">
+
+  <section class="p-3">
+    <div class="text-color"><a routerLink="/workshops"><i class="fa fa-arrow-left fa-lg arrow"></i></a></div>
+    <!-- <p style= "color: white;">{{this.competition.title}}</p> -->
+    <!-- <img height="100px" width="200px"  [src]="this.competition.imagePath" [alt]="this.competition.title"> -->
+  
+   
+  
+  <div class="w-100 mt-big" fxLayout="column" xLayoutAlign="start center">
+  
+  <div class="w-100" fxLayout="row wrap" fxLayoutAlign="space-around">
+    <div class="col-md-5">
+      <img [src]="this.workshop.imagePath" class="immg">
+    </div>
+    <div class="col-md-6 border-round bg-darkgrey detail text-white" fxLayout="column" fxLayoutAlign="space-between">
+      <!-- <p>{{this.competition.description}}</p> -->
+      <div class="w-100">
+        <h1 class="comp-title">{{this.workshop.title | titlecase}}</h1>
+        
+        <div class="comp-date w-100" fxLayout="row" fxLayoutAlign="space-between"><div>Workshop Date:</div><div>{{ this.workshop.date.day}}/{{this.workshop.date.month}}/{{this.workshop.date.year}}</div></div>
+        <div class="comp-date w-100" fxLayout="row" fxLayoutAlign="space-between"><div>Workshop Time:</div> <div>{{this.workshop.time}}</div></div>
+        <div class="comp-date w-100" fxLayout="row" fxLayoutAlign="space-between"><div>Price:</div><div>{{this.workshop.price}}</div></div>
+        <!-- <img height="100" width="200"  [src]="this.competition.imagePath" [alt]="this.competition.title"> -->
+        <!-- <p style= "color: white;">{{this.competition.imagePath}}</p> -->
+      </div>
+      <div class="w-100" fxLayout="row" fxLayoutAlign="end">
+        <a mat-raised-button class="ml-3" href="{{this.workshop.regLink}}">Register</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-12 border-round bg-darkgrey detail text-white">
+    <div class="h1">Know More</div>
+    <div class="text-large" [innerHTML]="this.workshopDesc"></div>
+  </div>
+  
+  </div>
+  </section>

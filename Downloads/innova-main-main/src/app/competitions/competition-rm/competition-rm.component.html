@@ -1,0 +1,47 @@
+
+<mat-spinner *ngIf="isLoading"></mat-spinner>
+<div *ngIf="!isLoading">
+
+
+<section class="p-3">
+  <div class="text-color"><a routerLink="/competitions"><i class="fa fa-arrow-left fa-lg arrow"></i></a></div>
+  <!-- <p style= "color: white;">{{this.competition.title}}</p> -->
+  <!-- <img height="100px" width="200px"  [src]="this.competition.imagePath" [alt]="this.competition.title"> -->
+
+ 
+
+<div class="w-100 mt-big" fxLayout="column" xLayoutAlign="start center">
+
+<div class="w-100" fxLayout="row wrap" fxLayoutAlign="space-around">
+  <div class="col-md-5">
+    <img [src]="this.competition.imagePath" class="immg">
+  </div>
+  <div class="col-md-6 border-round bg-darkgrey detail text-white" fxLayout="column" fxLayoutAlign="space-between">
+    <!-- <p>{{this.competition.description}}</p> -->
+    <div class="w-100"> 
+      <div class="comp-title">{{this.competition.title | titlecase}}</div>
+      <div class="comp-date w-100" fxLayout="row" fxLayoutAlign="space-between"><div>Date :</div> <div>{{ this.competition.date.day}}/{{this.competition.date.month}}/{{this.competition.date.year}}</div></div>
+      <div class="comp-date w-100" fxLayout="row" fxLayoutAlign="space-between"><div>Time :</div> <div>{{this.competition.time}}</div></div>
+      <!-- <img height="100" width="200"  [src]="this.competition.imagePath" [alt]="this.competition.title"> -->
+      <!-- <p style= "color: white;">{{this.competition.imagePath}}</p> -->
+    </div>
+    <div class="w-100" fxLayout="row" fxLayoutAlign="end">
+      <a mat-raised-button class="ml-3" href="{{this.competition.regLink}}">Register</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-12 border-round bg-darkgrey detail text-white">
+  <div class="h1">Know More</div>
+  <div class="text-large" [innerHTML]="this.compDesc"></div>
+</div>
+
+</div>
+</section>
+
+    
+
+
+
+  
+ 

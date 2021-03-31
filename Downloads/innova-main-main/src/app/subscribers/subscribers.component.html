@@ -1,0 +1,33 @@
+
+
+<section class="p-3">
+  <div class="heading text-color">Subscribe</div>
+
+<br>
+<br>
+
+<div id="subscription-form" class="mt-big col-md-6">
+  <form [formGroup]="form" class="mat-form-field" role = "form" name = "formSubscriber" >
+    <div class="form-part">
+      <label for="name"><b>Name:</b>  </label>
+      <input
+      matInput
+        type="text"
+        name="name"
+        id="name"
+        formControlName="name"
+      />
+    </div>
+    <div class="form-part">
+      <label for="phone"><b>Contact Number:</b></label>
+      <input matInput type="number" name="phone" id="phone"  maxlength="10" formControlName="phone" size="10"/>
+    </div>
+    <div class="form-part">
+      <label for="email"><b>Email:</b> </label>
+      <input matInput type="email" name="email" id="email" formControlName="email"/>
+    </div>
+
+    <button id="form-btn" type="submit" (click) = "onSaveSubscriber($event)" >Submit</button>
+  </form>
+</div>
+</section>
